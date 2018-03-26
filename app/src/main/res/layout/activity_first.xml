@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="study.com.pictureloaderdemo.fresco.FirstActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ff0"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            app:actualImageScaleType="centerCrop"
+            app:fadeDuration="3000"
+            app:roundedCornerRadius="10dp"
+            app:roundingBorderColor="#ff0000"
+            app:roundingBorderWidth="3dp"
+            app:viewAspectRatio="1"
+            />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/progressbar"
+            />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="100%"
+            />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#0f0"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0f0"
+                >
+
+                <study.com.pictureloaderdemo.fresco.view.GroupHeaderView
+                    android:id="@+id/ghv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0f0"
+                >
+
+                <study.com.pictureloaderdemo.fresco.view.GroupHeaderView
+                    android:id="@+id/ghv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#0f0"
+                >
+
+                <study.com.pictureloaderdemo.fresco.view.GroupHeaderView
+                    android:id="@+id/ghv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tip_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ccc"
+                android:padding="5dp"
+                android:text="三张图"
+                />
+
+            <TextView
+                android:id="@+id/tip_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ccc"
+                android:padding="5dp"
+                android:text="四张图"
+                />
+
+            <TextView
+                android:id="@+id/tip_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ccc"
+                android:padding="5dp"
+                android:text="五张图"
+                />
+
+            <TextView
+                android:id="@+id/tip_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ccc"
+                android:padding="5dp"
+                android:text="六张图"
+                />
+
+            <TextView
+                android:id="@+id/tip_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ccc"
+                android:padding="5dp"
+                android:text="七张图"
+                />
+
+            <TextView
+                android:id="@+id/tip_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ccc"
+                android:padding="5dp"
+                android:text="八张图"
+                />
+
+
+        </LinearLayout>
+
+        <study.com.pictureloaderdemo.fresco.view.WxGroupHeaderView
+            android:id="@+id/wghv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="#ccc"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tip_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ccc"
+                android:padding="5dp"
+                android:text="九张图"
+                />
+
+            <TextView
+                android:id="@+id/tip_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ccc"
+                android:padding="5dp"
+                android:text="检查缓存"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00f"
+        >
+
+        <study.com.pictureloaderdemo.fresco.view.GroupMultiHeaderView
+            android:id="@+id/sdv_2"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/progressbar"
+            />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="100%"
+            />
+
+
+    </FrameLayout>
+</LinearLayout>

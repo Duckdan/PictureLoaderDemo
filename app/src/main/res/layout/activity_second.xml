@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="study.com.pictureloaderdemo.fresco.SecondActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:background="#00f"
+        android:clickable="true"
+        app:actualImageScaleType="centerCrop"
+        app:fadeDuration="3000"
+        app:placeholderImage="@drawable/placeholder"
+        app:roundedCornerRadius="10dp"
+        app:roundingBorderColor="#ff0000"
+        app:roundingBorderWidth="3dp"
+        />
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:horizontalSpacing="3dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:verticalSpacing="3dp"
+        >
+    </GridView>
+</LinearLayout>
