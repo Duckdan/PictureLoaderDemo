@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import study.com.pictureloaderdemo.fresco.FrescoMainActivity;
 import study.com.pictureloaderdemo.glide.GlideMainActivity;
+import study.com.pictureloaderdemo.large.LargeImageActivity;
 import study.com.pictureloaderdemo.picasso.PicassoMainActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tv1;
     private TextView tv2;
     private TextView tv3;
+    private TextView tv4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         tv3 = (TextView) findViewById(R.id.tv_3);
         tv3.setOnClickListener(this);
+
+        tv4 = (TextView) findViewById(R.id.tv_4);
+        tv4.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.tv_3:
                 jumpActivity(GlideMainActivity.class);
+                break;
+            case R.id.tv_4:
+                jumpActivity(LargeImageActivity.class);
                 break;
         }
     }

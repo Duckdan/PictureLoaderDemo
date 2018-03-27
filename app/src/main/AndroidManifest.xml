@@ -37,6 +37,8 @@
         </activity>
         <activity android:name=".glide.GlideSecondActivity">
         </activity>
+        <activity android:name=".large.LargeImageActivity">
+        </activity>
     </application>
 
 </manifest>
